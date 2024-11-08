@@ -1,0 +1,7 @@
+x = input(":")
+y = input(":")
+z = input(":")
+
+a = [x,y,z]
+
+print(x.split("-"))

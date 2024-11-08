@@ -1,0 +1,65 @@
+ # newList = {expression(element)for}
+
+# sets = {1,2,3}
+# list insert (2,3)
+#     print(list)
+
+# DEFINE dictionary 'students' to store student names and grades
+# WHILE True:
+# 	PRINT menu options (Add, Update, Delete, View, Exit)
+# 	READ user choice
+	
+# 	IF choice is 'Add':
+#     	READ student name
+#     	READ grade
+#     	ADD name and grade to 'students'
+	
+# 	IF choice is 'Update':
+#     	READ student name
+#     	IF student exists:
+#         	READ new grade
+#         	UPDATE grade in 'students'
+	
+# 	IF choice is 'Delete':
+#     	READ student name
+#     	IF student exists:
+#         	DELETE student from 'students'
+	
+# 	IF choice is 'View':
+  
+#   	PRINT all students and their grades
+	
+# 	IF choice is 'Exit':
+#     	BREAK loop
+
+
+
+# dict= {}
+# while true:
+# 	PRINT menu options (Add, Update, Delete, View, Exit)
+	
+
+def hitung_frekuensi_karakter(kalimat):
+  """
+  Fungsi ini menghitung frekuensi kemunculan setiap karakter dalam sebuah kalimat.
+
+  Args:
+    kalimat: Kalimat yang akan dihitung frekuensi karakternya.
+
+  Returns:
+    Dictionary yang berisi karakter sebagai key dan jumlah kemunculannya sebagai value.
+  """
+
+  frekuensi = {}
+  for karakter in kalimat:
+    if karakter in frekuensi:
+      frekuensi[karakter] += 1
+    else:
+      frekuensi[karakter] = 1
+  return frekuensi
+
+# Contoh penggunaan
+kalimat = "Ini adalah contoh kalimat untuk dihitung frekuensi karakternya"
+hasil = hitung_frekuensi_karakter(kalimat)
+
+print(hasil)
